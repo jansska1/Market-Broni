@@ -1,0 +1,43 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"paths": {
+			"@/*": ["./*"]
+		}
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"app/page.js",
+		"lib/utils.js",
+		"app/layout.js",
+		"app/actions.js",
+		"components/header/header-auth.js",
+		"components/form-message.js",
+		"app/(auth-pages)/logowanie/page.js",
+		"utils/utils.js",
+		"app/(auth-pages)/rejestracja/page.jsx",
+		"components/submit-button.js"
+	],
+	"exclude": ["node_modules"]
+}

@@ -1,0 +1,16 @@
+export const PRODUCTS_PER_PAGE = 30
+export const FETCHING_LIMIT = 1
+export const MIN_PRODUCT = 3
+export const MAX_PRODUCT = 50
+export const MAX_PRICE = 1000000
+export const MIN_DESCRIPTION = 40
+export const MAX_DESCRIPTION = 3000
+export const MIN_IMAGE = 1
+export const MAX_IMAGE = 8
+export const MIN_PASS = 6
+export const MAX_PASS = 20
+export const MIN_NAME = 3
+export const MAX_NAME = 8
+export const MAIN_PAGE_ADS = 50
+export const EMAIL_REGEX = /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim
+export const NUMBER_REGEX = /^\d{9}$/

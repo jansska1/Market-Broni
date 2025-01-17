@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import '@radix-ui/themes/styles.css'; */
+/* @import './theme-config.css'; */
+
+@layer base {
+	:root {
+		--primary: 30 53% 64%;
+		--primary-foreground: #000000;
+		--secondary: 82 20% 62%;
+		--secondary-foreground: 119 19% 42%;
+		--third: 43 82% 89%;
+		/* --forth: 60 10% 92%; */
+		/* --forth: 30 20% 80%; */
+		--forth: 31 51% 92%;
+		--fifth: 26 31% 84%;
+		--sixth: 22 31% 76%;
+
+		/* --fifth: 67 50% 86%; */
+	}
+}
+
+/* @layer base {
+	:root {
+		--primary: 30 46% 50%;
+		--primary-foreground: 0 0% 98%;
+		--secondary: 95 27% 39%;
+		--secondary-foreground: 0 0% 0%;
+	}
+} */
+
+.radix-themes {
+	--default-font-family: var(--font-geist-sans) !important;
+}
+
+.react-slideshow-container + ul.indicators {
+	justify-content: flex-start !important;
+	margin-top: 1rem !important;
+}
