@@ -52,14 +52,6 @@ export default async function RootLayout({ children }) {
 								</Suspense>
 								<Providers>{children}</Providers>
 							</div>
-							<footer className='w-full flex items-center justify-center mx-auto text-center text-xs gap-8 py-16 border-t bg-fifth border-secondary-foreground'>
-								<p className='flex'>
-									<span>
-										<Hammer size={16} />
-									</span>
-									W budowie...
-								</p>
-							</footer>
 						</main>
 					</AuctionProvider>
 				</FavoritesProvider>

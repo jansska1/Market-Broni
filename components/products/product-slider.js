@@ -71,7 +71,7 @@ export default function PrductSlider({ product, url }) {
 				{url.map((src, index) => (
 					<div
 						key={index}
-						className='relative flex items-center justify-center h-[480px] md:h-[520px]'>
+						className='relative flex items-center justify-center h-[380px] md:h-[520px]'>
 						<Image
 							className='object-cover'
 							src={src}

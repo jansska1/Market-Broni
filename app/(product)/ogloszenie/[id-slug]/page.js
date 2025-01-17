@@ -26,7 +26,7 @@ export default async function productDetailsPage({ params }) {
 	const userProfile = await getUserProfile(product.user_id)
 
 	return (
-		<section className='h-screen lg:h-[calc(100vh-4.5rem)] py-12 px-6 bg-fifth'>
+		<section className='min-screen lg:h-[calc(100vh-4.5rem)] py-12 px-6 bg-fifth'>
 			<div className='flex justify-end mb-4'>
 				<ViewCounter productId={product.id} />
 			</div>
@@ -106,9 +106,10 @@ export default async function productDetailsPage({ params }) {
 						user={user}
 					/>
 				)}
-				<div className='mt-6 w-1/2'>
+
+				<div className='mt-6 w-full md:w-1/2'>
 					<p className='uppercase font-bold text-lg'>Opis</p>
-					<pre className='bg-forth p-4 whitespace-pre-line'>{product.description}</pre>
+					<pre className='bg-forth p-4 whitespace-pre-line break-words overflow-hidden'>{product.description}</pre>
 				</div>
 			</div>
 		</section>
